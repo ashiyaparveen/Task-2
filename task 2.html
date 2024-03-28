@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Management App</title>
+    <link rel="stylesheet" href="D:\.container {.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Task Management App</h1>
+      <div id="auth-container">
+        <h2>Login / Register</h2>
+        <input type="email" id="email" placeholder="Email" />
+        <input type="password" id="password" placeholder="Password" />
+        <button onclick="login()">Login</button>
+        <button onclick="register()">Register</button>
+      </div>
+      <div id="app-container" style="display: none">
+        <h2>Create Task</h2>
+        <input type="text" id="task-title" placeholder="Task Title" />
+        <input
+          type="text"
+          id="task-description"
+          placeholder="Task Description"
+        />
+        <select id="task-status">
+          <option value="To Do">To Do</option>
+          <option value="In Progress">In Progress</option>
+          <option value="Done">Done</option>
+        </select>
+        <button onclick="createTask()">Create Task</button>
+        <h2>Tasks</h2>
+        <select id="filter-status">
+          <option value="">All</option>
+          <option value="To Do">To Do</option>
+          <option value="In Progress">In Progress</option>
+          <option value="Done">Done</option>
+        </select>
+        <ul id="task-list"></ul>
+        <button onclick="logout()">Logout</button>
+      </div>
+    </div>
+    <script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-firestore.js"></script>
+    <script src="D:\js job.js"></script>
+    <script>
+        <footer>
+            <p>Copyright © 2024</p>
+        </footer>
+  </body>
+</html>
